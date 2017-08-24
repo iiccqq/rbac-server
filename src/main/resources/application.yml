@@ -1,0 +1,21 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8081
+    context-path: /
+
+spring:
+    datasource:
+        url: jdbc:mysql://localhost/rbac?useSSL=false
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.jdbc.Driver
+    thymeleaf:
+        cache: false
+storage:
+    webPath: http://localhost
+    imagePath: http://localhost
+
